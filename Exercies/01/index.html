@@ -5,18 +5,30 @@
 	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	    <meta http-equiv="X-UA-Compatible" content="ie-edge">
         <title>Hello HTML</title>
+        <!-- <style>
+            table, th, td {
+              border: 0.5px solid black;
+            }
+        </style> -->
     </head>
     <body>
-        <div>
-            <h1 style="display: inline;">Hello HTML</h1>
-            <form>
-            <label>Account:</label>
-            <input type="text" required>
-            <label>Password:</label>
-            <input type="text" required>
-            <input type="submit" value="Login">
-        </form>
-        </div>
+        <table>
+            <tr>
+                <td rowspan="2" width="200"><h1>Hello HTLM</h1></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td colspan="2" height="20">
+                    <form>
+                        <label>Account:</label>
+                        <input type="text" size="15" required>
+                        <label>Password:</label>
+                        <input type="text" size="15" required>
+                        <input type="submit" value="Login">
+                    </form>
+                </td>
+            </tr>
+        </table>
         <h2>A Software Studio Exercise</h2>
 
         <p>Lorcm ipsum dolor sit amt. consectctur adipisicing cl it. Natus. cxplicabo invcntorc. Autem quibusdam officia. suns culpa nesciunt dolorcs voluptatum cupiditatc aliquid amet ad sed. At vcl recusandac eligendi veritatis cum? </p>
@@ -25,9 +37,9 @@
         <form>
             <label> Do you find this article helpful?</label>
             <label>Yes</label>
-            <input type="radio" required>
+            <input type="radio" name="YN" required>
             <label>No</label>
-            <input type="radio" required>
+            <input type="radio" name="YN">
             </br></br>
             <label>What's your favor language?</label>
             <select>
